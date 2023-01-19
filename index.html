@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stoked</title>
+  </head>
+  <body>
+    <header>
+      <!-- Desktop -->
+      <div class="header-container__top">
+        <div class="header-container__top-left">
+          <p>Asesoramiento, preguntas técnicas y más en @stokedchile</p>
+          <img src="src/assets/SVG/Instagram.svg" alt="instagram_icon" />
+        </div>
+        <div class="header-container__top-right">
+          <img src="src/assets/SVG/User.svg" alt="user_icon" />
+          <img src="src/assets/SVG/Delivered.svg" alt="delivered_icon" />
+          <img src="src/assets/SVG/Cart.svg" alt="cart_icon" />
+          <img src="src/assets/SVG/Store.svg" alt="store_icon" />
+        </div>
+      </div>
+      <nav>
+        <div class="header-container__bottom">
+          <img
+            src="src/assets/stoked_simplificado1.png"
+            alt="stoked_logo"
+            class="logo"
+          />
+          <div class="header-container__nav">
+            <ul>
+              <li><a href="#">Traje de agua</a></li>
+              <li><a href="#">Hombre</a></li>
+              <li><a href="#">Mujer</a></li>
+              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Equipamientos</a></li>
+              <li><a href="#">Sale</a></li>
+            </ul>
+          </div>
+          <form action="search">
+            <img src="src/assets/SVG/Search.svg" alt="search_icon" />
+            <input type="search" class="search-data" placeholder="Buscar" />
+            <button type="submit" id="search_desktop"></button>
+          </form>
+        </div>
+        <!-- Desktop -->
+
+        <!-- Mobile -->
+        <div class="header-mobile">
+          <div class="header-mobile__top">
+            <img
+              src="src/assets/stoked_simplificado1.png"
+              alt="stoked_logo"
+              class="logo"
+            />
+            <div class="header-mobile_top-icons">
+              <img src="src/assets/SVG/User.svg" alt="user_icon" />
+              <img src="src/assets/SVG/Cart.svg" alt="cart_icon" />
+              <img src="src/assets/SVG/Menu.svg" alt="Menu_icon" />
+            </div>
+          </div>
+          <div class="search-mobile">
+            <form action="search">
+              <img src="src/assets/SVG/Search.svg" alt="" />
+              <input type="search" class="search-data" placeholder="Buscar" />
+              <button type="submit" id="seach_mobile"></button>
+            </form>
+          </div>
+        </div>
+        <!-- Mobile -->
+      </nav>
+    </header>
+    <main>
+      <section class="main-slider">
+        <div class="slider-info">
+          <p>Envío gratis por compras sobre $50.000</p>
+        </div>
+        <section class="slide-container" id="slider-container">
+          <div class="slide">
+            <div class="slider-img">
+              <img src="/src/assets/stoked_trajes_de_ban_o-01.jpg" alt="" />
+              <img src="/src/assets/stoked_trajes_de_ban_o-01.jpg" alt="" />
+              <img src="/src/assets/stoked_trajes_de_ban_o-01.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="/src/index.js"></script>
+  </body>
+</html>

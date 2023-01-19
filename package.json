@@ -1,0 +1,24 @@
+{
+  "name": "prueba-tecnica-rafael-malpica",
+  "version": "1.0.0",
+  "description": "Prueba técnica | Desarrollador Frontend | Komax. Diseño de Figma a HTML, CSS y JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafacodejs/prueba-tecnica-rafael-malpica.git"
+  },
+  "keywords": [
+    "Komax",
+    "Stoked",
+    "E-commerce"
+  ],
+  "author": "Rafael Malpica",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafacodejs/prueba-tecnica-rafael-malpica/issues"
+  },
+  "homepage": "https://github.com/rafacodejs/prueba-tecnica-rafael-malpica#readme"
+}
