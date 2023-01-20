@@ -236,18 +236,90 @@ form input {
   flex: 1 0 auto;
   margin: 0 20px;
 }
-
 .product-container {
-  position: relative;
   width: 100%;
   height: auto;
   padding: 0px 25px 10px 25px;
+  margin-top: 15px;
 }
 .subtitle {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: underline;
   text-transform: uppercase;
+}
+.carousel-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: auto;
+  margin-left: 40px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  position: absolute;
+  top: 0%;
+  width: 40px;
+  height: 300px;
+
+  color: black;
+  font-size: 3rem;
+  box-shadow: 2px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.owl-carousel .owl-nav button.owl-next {
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 40px;
+  height: 300px;
+
+  color: black;
+  font-size: 3rem;
+  box-shadow: -2px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.owl-dots {
+  display: none;
+}
+.carousel-card h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.carousel-card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.carousel-card-info span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #c2c2c2;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+.carousel-card-info p {
+  font-size: 20px;
+  color: black;
+  margin-top: 10px;
 }
 
 /*-Animación NavLinks*/

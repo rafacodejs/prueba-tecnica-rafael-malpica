@@ -52,6 +52,24 @@
     margin: 0 8px;
     scroll-snap-align: center;
   }
+  .carousel-card {
+    width: 150px;
+  }
+  .carousel-card h3 {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev {
+    width: 40px;
+    height: 200px;
+    font-size: 3rem;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    width: 40px;
+    height: 200px;
+    font-size: 3rem;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 920px) {
   .logo {
@@ -84,5 +102,9 @@
     flex: 1 0 auto;
     margin: 0 8px;
     scroll-snap-align: center;
+  }
+  .carousel-card h3 {
+    width: 150px;
+    font-size: 16px;
   }
 }

@@ -30,21 +30,20 @@ function showSlides(n) {
 showSlides(position);
 
 $('.owl-carousel').owlCarousel({
-  margin: 15,
+  loop: true,
+  margin: 10,
   nav: true,
-  navText: [
-    "<div class='nav-button owl-prev'>‹</div>",
-    "<div class='nav-button owl-next'>›</div>",
-  ],
+  items: 4,
   responsive: {
     0: {
-      items: 1,
-    },
-    600: {
       items: 2,
     },
-    1000: {
+
+    600: {
       items: 3,
+    },
+    1000: {
+      items: 4,
     },
   },
 });
