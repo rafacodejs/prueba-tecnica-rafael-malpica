@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <title>Stoked</title>
     <meta charset="UTF-8" />
+    <meta name="title" content="Stoked | Lo mejor del surf y del lifestyle" />
+    <meta
+      name="description"
+      content="Descubre los productos Stoked inspirados en el mundo del surf: polerones, poleras, ponchos toalla, trajes de surf y de baño para hombre, mujer y niño y más."
+    />
+    <meta
+      name="keywords"
+      content="Stoked, surf, urban brand, Chile, commerce  "
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="initial-scale=1" />
     <link rel="stylesheet" href="./src/styles/index.css" />
@@ -12,7 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap"
       rel="stylesheet"
     />
-    <title>Stoked</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -48,7 +61,7 @@
           </div>
           <form action="search">
             <img src="src/assets/SVG/Search.svg" alt="search_icon" />
-            <input type="search" class="search-data" placeholder="Buscar" />
+            <input type="search" placeholder="Buscar" />
             <button type="submit" id="search_desktop"></button>
           </form>
         </div>
@@ -70,31 +83,72 @@
           </div>
           <div class="search-mobile">
             <form action="search">
-              <img src="src/assets/SVG/Search.svg" alt="" />
               <input type="search" class="search-data" placeholder="Buscar" />
               <button type="submit" id="seach_mobile"></button>
+              <img src="src/assets/SVG/Search.svg" alt="" />
             </form>
           </div>
         </div>
         <!-- Mobile -->
       </nav>
     </header>
+
     <main>
       <section class="main-slider">
         <div class="slider-info">
-          <p>Envío gratis por compras sobre $50.000</p>
+          <h3>Envío gratis por compras sobre $50.000</h3>
         </div>
-        <section class="slide-container" id="slider-container">
-          <div class="slide">
-            <div class="slider-img">
-              <img src="/src/assets/stoked_trajes_de_ban_o-01.jpg" alt="" />
-              <img src="/src/assets/stoked_trajes_de_ban_o-01.jpg" alt="" />
-              <img src="/src/assets/stoked_trajes_de_ban_o-01.jpg" alt="" />
-            </div>
+        <section class="slider">
+          <div class="slide active fade">
+            <img
+              src="./src/assets/banner-01-desktop.jpg"
+              alt=""
+              class="banner-desktop"
+            />
+            <img
+              src="./src/assets/Mobile/banner-01-mobile.jpg"
+              alt=""
+              class="banner-mobile"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="./src/assets/banner-02-desktop.jpg"
+              alt=""
+              class="banner-desktop"
+            />
+            <img
+              src="./src/assets/Mobile/banner-02-mobile.jpg"
+              alt=""
+              class="banner-mobile"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="./src/assets/banner-03-desktop.jpg"
+              alt=""
+              class="banner-desktop"
+            />
+            <img
+              src="./src/assets/Mobile/banner-02-mobile.jpg"
+              alt=""
+              class="banner-mobile"
+            />
           </div>
         </section>
       </section>
+
+      <section class="grid-container">
+        <div class="grid-collection">
+          <img src="./src/assets/grid-image-01.jpg" alt="" />
+          <img src="./src/assets/grid-image-02.jpg" alt="" />
+          <img src="./src/assets/grid-image-03.jpg" alt="" />
+        </div>
+      </section>
     </main>
+
+    <footer></footer>
+
     <script src="/src/index.js"></script>
   </body>
 </html>

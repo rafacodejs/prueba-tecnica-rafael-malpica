@@ -10,7 +10,7 @@ function nextSlide(n) {
 
 setInterval(function time() {
   showSlides((position += 1));
-}, 4000);
+}, 5000);
 
 function showSlides(n) {
   let i;
@@ -27,5 +27,4 @@ function showSlides(n) {
   }
   slides[position - 1].style.display = 'block';
 }
-
 showSlides(position);
