@@ -26,6 +26,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/styles/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./src/styles/owl.theme.default.min.css" />
   </head>
   <body>
     <header>
@@ -104,11 +106,13 @@
               src="./src/assets/banner-01-desktop.jpg"
               alt=""
               class="banner-desktop"
+              loading="lazy"
             />
             <img
               src="./src/assets/Mobile/banner-01-mobile.jpg"
               alt=""
               class="banner-mobile"
+              loading="lazy"
             />
           </div>
           <div class="slide fade">
@@ -116,11 +120,13 @@
               src="./src/assets/banner-02-desktop.jpg"
               alt=""
               class="banner-desktop"
+              loading="lazy"
             />
             <img
               src="./src/assets/Mobile/banner-02-mobile.jpg"
               alt=""
               class="banner-mobile"
+              loading="lazy"
             />
           </div>
           <div class="slide fade">
@@ -128,11 +134,13 @@
               src="./src/assets/banner-03-desktop.jpg"
               alt=""
               class="banner-desktop"
+              loading="lazy"
             />
             <img
               src="./src/assets/Mobile/banner-02-mobile.jpg"
               alt=""
               class="banner-mobile"
+              loading="lazy"
             />
           </div>
         </section>
@@ -140,15 +148,21 @@
 
       <section class="grid-container">
         <div class="grid-collection">
-          <img src="./src/assets/grid-image-01.jpg" alt="" />
-          <img src="./src/assets/grid-image-02.jpg" alt="" />
-          <img src="./src/assets/grid-image-03.jpg" alt="" />
+          <img src="./src/assets/grid-image-01.jpg" alt="" loading="lazy" />
+          <img src="./src/assets/grid-image-02.jpg" alt="" loading="lazy" />
+          <img src="./src/assets/grid-image-03.jpg" alt="" loading="lazy" />
         </div>
+      </section>
+
+      <section class="product-container">
+        <h2 class="subtitle">Lo que la está llevando</h2>
       </section>
     </main>
 
     <footer></footer>
 
+    <script src="./src/jquery.min.js"></script>
+    <script src="./src/owl.carousel.min.js"></script>
     <script src="/src/index.js"></script>
   </body>
 </html>
