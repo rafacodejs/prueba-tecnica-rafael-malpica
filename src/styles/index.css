@@ -73,7 +73,7 @@ header {
   font-size: 18px;
   font-weight: 200;
   color: #000;
-  margin-right: 20px;
+  margin-right: 40px;
   letter-spacing: 1px;
   transition: 0.4s;
 }
@@ -405,6 +405,7 @@ footer {
 }
 .footer-container .footer-subscribe .footer-conditions input {
   width: 20px;
+  cursor: pointer;
 }
 .footer-container .footer-subscribe .footer-conditions p {
   width: 100%;
@@ -420,6 +421,11 @@ footer {
   font-size: 14px;
   text-align: center;
   box-shadow: 0px 2px 5px 0px rgba(79, 78, 78, 0.75);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footer-subscribe button:hover {
+  transform: scaleY(1.1);
 }
 .footer-info,
 .footer-stores {
@@ -464,6 +470,9 @@ footer {
   margin-top: 55px;
 }
 .footer-social-media__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 15px;
 }
 .footer-social-media__icons img {
@@ -512,3 +521,117 @@ footer {
 }
 
 /*-----*/
+
+.menu-mobile {
+  display: none;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 50000;
+  transition: right 0.5s ease;
+}
+.nav-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-left: 10px;
+}
+.nav-logos img {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__link {
+  color: #000;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+.nav__link--inside {
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.list {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 16px 16px 0;
+  background: #fff;
+}
+
+.list__item {
+  border-bottom: 1px solid black;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.list__item--click {
+  cursor: pointer;
+}
+
+.list__button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.arrow .list__arrow {
+  transform: rotate(90deg);
+}
+
+.list__arrow {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.list__show {
+  width: 80%;
+  margin-left: auto;
+  list-style: none;
+  transition: height 0.4s;
+  height: 0;
+}
+.sales-title {
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+}
+.sales-title h2 {
+  font-size: 18px;
+  text-decoration: underline;
+  margin-left: 45px;
+}
+.active,
+.show {
+  display: block;
+  transition: right 0.5s ease;
+}
+.cancel-icon {
+  width: 45px;
+  cursor: pointer;
+}

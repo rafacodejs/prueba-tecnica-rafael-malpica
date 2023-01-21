@@ -31,7 +31,8 @@
   </head>
   <body>
     <header>
-      <!-- Desktop -->
+      <!-- Header Desktop -->
+
       <div class="header-container__top">
         <div class="header-container__top-left">
           <p>Asesoramiento, preguntas técnicas y más en @stokedchile</p>
@@ -67,9 +68,10 @@
             <button type="submit" id="search_desktop"></button>
           </form>
         </div>
-        <!-- Desktop -->
 
-        <!-- Mobile -->
+        <!-- Header Desktop -->
+
+        <!-- Header Mobile -->
         <div class="header-mobile">
           <div class="header-mobile__top">
             <img
@@ -80,7 +82,11 @@
             <div class="header-mobile_top-icons">
               <img src="src/assets/SVG/User.svg" alt="user_icon" />
               <img src="src/assets/SVG/Cart.svg" alt="cart_icon" />
-              <img src="src/assets/SVG/Menu.svg" alt="Menu_icon" />
+              <img
+                src="src/assets/SVG/Menu.svg"
+                alt="Menu_icon"
+                class="menu-icon"
+              />
             </div>
           </div>
           <div class="search-mobile">
@@ -90,11 +96,151 @@
             </form>
           </div>
         </div>
-        <!-- Mobile -->
+        <!-- Header Mobile -->
+
+        <!-- Menu Mobile -->
+
+        <section class="menu-mobile">
+          <nav class="nav">
+            <ul class="list">
+              <div class="nav-logos">
+                <img
+                  src="src/assets/stoked_simplificado1.png"
+                  alt="logo"
+                  class="logo"
+                />
+                <img
+                  src="src/assets/SVG/cancel.svg"
+                  alt="Menu_icon"
+                  class="cancel-icon"
+                />
+              </div>
+
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Trajes de agua</a>
+                  <img src="./src/assets/SVG/Arrow.svg" class="list__arrow" />
+                </div>
+
+                <ul class="list__show">
+                  <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside"
+                      >Estoy dentro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Hombre</a>
+                  <img src="./src/assets/SVG/Arrow.svg" class="list__arrow" />
+                </div>
+
+                <ul class="list__show">
+                  <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside"
+                      >Estoy dentro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Mujer</a>
+                  <img src="./src/assets/SVG/Arrow.svg" class="list__arrow" />
+                </div>
+
+                <ul class="list__show">
+                  <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside"
+                      >Estoy dentro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Niños</a>
+                  <img src="./src/assets/SVG/Arrow.svg" class="list__arrow" />
+                </div>
+
+                <ul class="list__show">
+                  <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside"
+                      >Estoy dentro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Accesorios</a>
+                  <img src="./src/assets/SVG/Arrow.svg" class="list__arrow" />
+                </div>
+
+                <ul class="list__show">
+                  <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside"
+                      >Estoy dentro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Equipamiento</a>
+                  <img src="./src/assets/SVG/Arrow.svg" class="list__arrow" />
+                </div>
+
+                <ul class="list__show">
+                  <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside"
+                      >Estoy dentro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <div class="sales-title">
+                <h2>Sales</h2>
+              </div>
+
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Chatea con nosotros</a>
+                  <img src="./src/assets/SVG/Chat.svg" class="list__img" />
+                </div>
+              </li>
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Seguimiento de pedidos</a>
+                  <img src="./src/assets/SVG/Delivered.svg" class="list__img" />
+                </div>
+              </li>
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Nuestras tiendas</a>
+                  <img src="./src/assets/SVG/Store.svg" class="list__img" />
+                </div>
+              </li>
+              <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                  <a href="#" class="nav__link">Mi cuenta</a>
+                  <img src="./src/assets/SVG/User.svg" class="list__img" />
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <!-- Menu Mobile -->
       </nav>
     </header>
 
     <main>
+      <!-- Banner Slider -->
+
       <section class="main-slider">
         <div class="slider-info">
           <h3>Envío gratis por compras sobre $50.000</h3>
@@ -145,6 +291,10 @@
         </section>
       </section>
 
+      <!-- Banner Slider -->
+
+      <!-- Carousel Banner -->
+
       <section class="grid-container">
         <section class="grid-collection">
           <img
@@ -164,6 +314,10 @@
           />
         </section>
       </section>
+
+      <!-- Carousel Banner -->
+
+      <!-- Carousel Products -->
 
       <section class="product-container">
         <h2 class="subtitle">Lo que la está llevando</h2>
@@ -243,6 +397,10 @@
         </section>
       </section>
 
+      <!-- Carousel Products -->
+
+      <!-- Banner Categories -->
+
       <section class="categories-container">
         <h3 class="subtitle">Categorías</h3>
 
@@ -297,6 +455,7 @@
           </div>
         </section>
       </section>
+      <!-- Banner Categories -->
     </main>
 
     <footer>

@@ -101,11 +101,13 @@
     padding: 0px;
     margin-top: 15px;
   }
-  .footer-social-media h4 {
-    text-align: center;
-  }
   .footer-stores {
     margin-right: 40px;
+  }
+  .footer-social-media__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-social-media__icons img {
     margin-right: 20px;
@@ -127,11 +129,15 @@
     height: 350px;
     object-fit: fill;
   }
-}
-.footer-social-media__icons img {
-  margin-top: 10px;
+  .footer-social-media__icons img {
+    margin-top: 10px;
+  }
+  
 }
 @media screen and (min-width: 768px) and (max-width: 1160px) {
+  .header-container__nav ul li a {
+    margin-right: 20px;
+  }
   .grid-container {
     padding: 20px 0 50px 0;
   }

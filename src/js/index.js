@@ -1,3 +1,7 @@
+const menuBtn = document.querySelector('.menu-icon');
+const cancelBtn = document.querySelector('.cancel-icon');
+const items = document.querySelector('.menu-mobile');
+
 let position = 1;
 
 function slidePosition(n) {
@@ -46,4 +50,32 @@ $('.owl-carousel').owlCarousel({
       items: 4,
     },
   },
+});
+
+menuBtn.addEventListener('click', () => {
+  items.classList.add('active');
+  menuBtn.classList.add('hide');
+  cancelBtn.classList.add('show');
+  cancelBtn.classList.add('show');
+});
+cancelBtn.addEventListener('click', () => {
+  items.classList.remove('active');
+  menuBtn.classList.remove('hide');
+  cancelBtn.classList.remove('show');
+});
+
+let listElements = document.querySelectorAll('.list__button--click');
+
+listElements.forEach((listElement) => {
+  listElement.addEventListener('click', () => {
+    listElement.classList.toggle('arrow');
+
+    let height = 0;
+    let menu = listElement.nextElementSibling;
+    if (menu.clientHeight == '0') {
+      height = menu.scrollHeight;
+    }
+
+    menu.style.height = `${height}px`;
+  });
 });
