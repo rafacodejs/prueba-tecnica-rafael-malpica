@@ -4,7 +4,6 @@
   }
   .categories-container .categories-grid .category-card h4 {
     font-size: 14px;
-    
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -82,6 +81,35 @@
     height: 200px;
     font-size: 3rem;
   }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr repeat(2, 1fr) 0.5fr;
+    background-color: #fff;
+    padding: 0;
+  }
+  .footer-container .footer-subscribe {
+    background-color: #eeeeee;
+    padding: 15px;
+  }
+  .footer-info,
+  .footer-stores,
+  .footer-social-media {
+    display: grid;
+    place-content: center;
+    background-color: #fff;
+    padding: 0px;
+    margin-top: 15px;
+  }
+  .footer-social-media h4 {
+    text-align: center;
+  }
+  .footer-stores {
+    margin-right: 40px;
+  }
+  .footer-social-media__icons img {
+    margin-right: 20px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 920px) {
   .logo {
@@ -99,6 +127,9 @@
     height: 350px;
     object-fit: fill;
   }
+}
+.footer-social-media__icons img {
+  margin-top: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 1160px) {
   .grid-container {

@@ -136,7 +136,7 @@
               loading="lazy"
             />
             <img
-              src="./src/assets/Mobile/banner-02-mobile.jpg"
+              src="./src/assets/Mobile/banner-03-mobile.jpg"
               alt="banner-img-3"
               class="banner-mobile"
               loading="lazy"
@@ -146,7 +146,7 @@
       </section>
 
       <section class="grid-container">
-        <div class="grid-collection">
+        <section class="grid-collection">
           <img
             src="./src/assets/grid-image-01.jpg"
             alt="collection-img-1"
@@ -162,7 +162,7 @@
             alt="collection-img-3"
             loading="lazy"
           />
-        </div>
+        </section>
       </section>
 
       <section class="product-container">
@@ -244,9 +244,8 @@
       </section>
 
       <section class="categories-container">
-        
         <h3 class="subtitle">Categorías</h3>
-        
+
         <section class="categories-grid">
           <div class="category-card">
             <img
@@ -300,10 +299,90 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section class="footer-container">
+        <div class="footer-subscribe">
+          <h3>Subcríbete</h3>
+          <p>
+            ¡Infórmate de las noticias, eventos, promociones, descuentos,
+            sorteos y concursos que tenemos para ti!
+          </p>
+          <form action="/subscribe">
+            <input type="text" placeholder="Ingresa tu correo electrónico" />
+          </form>
+          <div class="footer-conditions">
+            <input type="checkbox" name="page-conditions" id="conditions" />
+            <p>
+              Acepto recibir promociones y novedades de Stoked y marcas
+              representadas por Komax.
+            </p>
+          </div>
+          <button type="submit">Registrarme</button>
+        </div>
 
-    <script src="./src/jquery.min.js"></script>
-    <script src="./src/owl.carousel.js"></script>
-    <script src="/src/index.js"></script>
+        <div class="footer-info">
+          <h4>Te informamos</h4>
+          <div class="footer-info__list">
+            <ul>
+              <li><a href="#"> Formulario de contacto</a></li>
+              <li><a href="#">Chatea con nosotros</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Nuestras tiendas</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Costos de envío</a></li>
+              <li><a href="#">Medio de pago</a></li>
+              <li><a href="#">Estado de mi pedido</a></li>
+              <li><a href="#">Cambios y devoluciones</a></li>
+              <li><a href="#">Garantías</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-stores">
+          <h4>Nuestras Tiendas</h4>
+          <div class="footer-stores__list">
+            <ul>
+              <li><a href="#">OMZ</a></li>
+              <li><a href="#"> AV. Costanera S/N</a></li>
+              <li><a href="#">Matanza</a></li>
+              <li><a href="#">+56932687133</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">ALTOMAR</a></li>
+              <li><a href="#">Av. Comercio #2241</a></li>
+              <li><a href="#">Pichilemu</a></li>
+              <li><a href="#">+56932687132</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social-media">
+          <h4>Nuestras Redes</h4>
+          <div class="footer-social-media__icons">
+            <a href="#"
+              ><img
+                src="/src/assets/SVG/Instagram_Footer.svg"
+                alt="instagram_icon"
+            /></a>
+            <a href="#"
+              ><img src="/src/assets/SVG/Facebook.svg" alt="facebook_icon"
+            /></a>
+            <a href="#"
+              ><img src="/src/assets/SVG/Twitter.svg" alt="twitter_icon"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <p class="copyright">
+        2022 © Komax S.A. Todos los derechos reservados | AV. del Parque 4314,
+        Huechuraba, Santiago de Chile | sac@komax.cl
+      </p>
+    </footer>
+
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="./src/js/owl.carousel.js"></script>
+    <script src="/src/js/index.js"></script>
   </body>
 </html>
