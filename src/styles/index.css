@@ -4,6 +4,14 @@
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
 }
+:root {
+  --main-color: #282c34;
+  --secondary: #78020a;
+  --button-color: #d3d2d2;
+  --text-color-1: #fff;
+  --text-color-2: #000;
+  --dimWhite: rgba(255, 255, 255, 0.7);
+}
 body {
   overflow-x: hidden;
 }
@@ -71,17 +79,13 @@ header {
   width: 200px;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 200;
-  color: #000;
+  font-weight: 400;
+  color: var(--text-color-2);
   margin-right: 40px;
   letter-spacing: 1px;
-  transition: 0.4s;
 }
 .header-container__nav ul li a:hover {
-  color: black;
-  font-weight: 400;
-  border-bottom: 2px solid #000;
-  transform: scale(1.1);
+  border-bottom: 1px solid #000;
 }
 form {
   display: flex;
@@ -141,13 +145,12 @@ form input {
   justify-content: center;
   align-items: center;
   padding: 4px;
-  background-color: #78020a;
-  color: white;
+  background-color: var(--secondary);
+  color: var(--text-color-1);
 }
 .slider-info h3 {
   font-size: 16px;
 }
-/*---*/
 .slider {
   position: relative;
   width: 100%;
@@ -189,7 +192,7 @@ form input {
   width: 40px;
   height: 50px;
   z-index: 900;
-  color: #222;
+  color: var(--text-color-2);
   background-color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
@@ -203,7 +206,7 @@ form input {
 }
 .navigation span .arrow-next,
 .navigation span .arrow-prev {
-  color: #222;
+  color: var(--text-color-2);
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -212,7 +215,6 @@ form input {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -237,6 +239,11 @@ form input {
   width: 350px;
   flex: 1 0 auto;
   margin: 0 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.grid-collection img:hover {
+  transform: scale(1.1);
 }
 .product-container {
   width: 100%;
@@ -274,27 +281,27 @@ form input {
 .owl-carousel .owl-nav button.owl-prev {
   border: none;
   padding: 0 !important;
-  font: inherit;
   position: absolute;
   top: 0%;
   width: 40px;
   height: 300px;
-  color: black;
-  font-size: 3rem;
+  color: var(--text-color-2);
+  font-size: 2.4rem;
+  border-radius: 0px 8px 8px 0px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   cursor: pointer;
 }
 .owl-carousel .owl-nav button.owl-next {
   border: none;
   padding: 0 !important;
-  font: inherit;
   position: absolute;
   top: 0%;
   right: 0;
   width: 40px;
   height: 300px;
-  color: black;
-  font-size: 3rem;
+  color: var(--text-color-2);
+  font-size: 2.4rem;
+  border-radius: 8px 0px 0px 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   cursor: pointer;
 }
@@ -323,7 +330,7 @@ form input {
 }
 .carousel-card-info p {
   font-size: 20px;
-  color: black;
+  color: var(--text-color-2);
   margin-top: 10px;
 }
 .categories-container {
@@ -332,7 +339,6 @@ form input {
   margin-top: 20px;
   margin-bottom: 25px;
 }
-
 .categories-container .categories-grid {
   display: flex;
   flex-direction: row;
@@ -355,7 +361,6 @@ form input {
 .categories-container .categories-grid .category-card img {
   width: 215px;
 }
-
 footer {
   width: 100%;
   height: auto;
@@ -377,13 +382,13 @@ footer {
 .footer-container .footer-subscribe h3 {
   font-size: 18px;
   font-weight: 400;
-  color: #000;
+  color: var(--text-color-2);
   padding: 10px;
 }
 .footer-container .footer-subscribe p {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: var(--text-color-2);
   padding: 10px;
 }
 .footer-container .footer-subscribe form {
@@ -414,7 +419,7 @@ footer {
 .footer-subscribe button {
   width: 100%;
   height: 35px;
-  background-color: #d3d2d2;
+  background-color: var(--button-color);
   border-radius: 6px;
   border: none;
   font-weight: 400;
@@ -423,6 +428,10 @@ footer {
   box-shadow: 0px 2px 5px 0px rgba(79, 78, 78, 0.75);
   cursor: pointer;
   transition: 0.5s;
+}
+.footer-subscribe button:hover {
+  color: var(--text-color-1);
+  background-color: var(--secondary);
 }
 .footer-subscribe button:hover {
   transform: scaleY(1.1);
@@ -463,7 +472,7 @@ footer {
 .footer-stores__list ul li a {
   font-size: 14px;
   font-weight: 200;
-  color: #000;
+  color: var(--text-color-2);
   text-decoration: none;
   letter-spacing: 1px;
   transition: 0.4s;
@@ -484,48 +493,9 @@ footer {
   font-weight: 200;
   padding: 10px;
 }
-
-/*-Animación NavLinks*/
-
-.link {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.link::before,
-.link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  transform: scaleX(0);
-  transition: transform 0.25s;
-}
-.link::before {
-  top: -3px;
-  transform-origin: left;
-}
-.link::after {
-  bottom: -3px;
-  transform-origin: right;
-}
-.link:hover::before,
-.link:hover::after {
-  transform: scaleX(1);
-}
-
-/*-----*/
-
 .menu-mobile {
   display: none;
 }
-
 .nav {
   position: absolute;
   top: 0;
@@ -533,7 +503,7 @@ footer {
   display: flex;
   width: 300px;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--text-color-1);
   z-index: 50000;
   transition: right 0.5s ease;
 }
@@ -555,14 +525,12 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 .nav__link {
-  color: #000;
+  color: var(--text-color-2);
   display: block;
   padding: 15px 0;
   text-decoration: none;
 }
-
 .nav__link--inside {
   border-radius: 6px;
   padding-left: 20px;
@@ -570,27 +538,25 @@ footer {
   text-align: left;
 }
 .list {
-  width: 100%;
+  position: fixed;
+  width: 370px;
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-radius: 0 16px 16px 0;
-  background: #fff;
+  background: var(--text-color-1);
 }
-
 .list__item {
   border-bottom: 1px solid black;
   list-style: none;
-  width: 100%;
+  width: 80%;
   text-align: center;
   overflow: hidden;
 }
-
 .list__item--click {
   cursor: pointer;
 }
-
 .list__button {
   display: flex;
   align-items: center;
@@ -598,16 +564,13 @@ footer {
   width: 70%;
   margin: 0 auto;
 }
-
 .arrow .list__arrow {
   transform: rotate(90deg);
 }
-
 .list__arrow {
   margin-left: auto;
   transition: transform 0.3s;
 }
-
 .list__show {
   width: 80%;
   margin-left: auto;
