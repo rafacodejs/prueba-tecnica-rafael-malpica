@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector('.menu-icon');
 const cancelBtn = document.querySelector('.cancel-icon');
 const items = document.querySelector('.menu-mobile');
+const ancho = screen.width;
 
 let position = 1;
 

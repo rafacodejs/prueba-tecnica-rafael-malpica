@@ -175,7 +175,7 @@ form input {
 .navigation {
   position: absolute;
   width: 100%;
-  height: 400px;
+  height: 480px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -239,8 +239,8 @@ form input {
   width: 350px;
   flex: 1 0 auto;
   margin: 0 20px;
-  transition: 0.4s;
   cursor: pointer;
+  transition: 0.4s;
 }
 .grid-collection img:hover {
   transform: scale(1.1);
@@ -275,7 +275,7 @@ form input {
   justify-content: center;
   align-items: center;
   width: 280px;
-  height: auto;
+  height: 350px;
   padding-left: 30px;
 }
 .owl-carousel .owl-nav button.owl-prev {
@@ -309,6 +309,7 @@ form input {
   display: none;
 }
 .carousel-card h3 {
+  height: 70px;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
@@ -330,6 +331,7 @@ form input {
 }
 .carousel-card-info p {
   font-size: 20px;
+  font-weight: 600;
   color: var(--text-color-2);
   margin-top: 10px;
 }
@@ -493,8 +495,12 @@ footer {
   font-weight: 200;
   padding: 10px;
 }
+
+/*Menu Mobile*/
+
 .menu-mobile {
   display: none;
+  transition: right 0.5s ease;
 }
 .nav {
   position: absolute;
@@ -509,11 +515,8 @@ footer {
 }
 .nav-logos {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid black;
-  margin-left: 10px;
+  margin-right: 60px;
 }
 .nav-logos img {
   width: 120px;
@@ -542,7 +545,7 @@ footer {
   width: 370px;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  margin-top: 10px;
   flex-direction: column;
   border-radius: 0 16px 16px 0;
   background: var(--text-color-1);
@@ -560,9 +563,13 @@ footer {
 .list__button {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 18px;
   width: 70%;
   margin: 0 auto;
+}
+.list__icons {
+  position: absolute;
+  right: 120px;
 }
 .arrow .list__arrow {
   transform: rotate(90deg);
@@ -594,7 +601,9 @@ footer {
   display: block;
   transition: right 0.5s ease;
 }
-.cancel-icon {
+.nav-logos .cancel-icon {
   width: 45px;
   cursor: pointer;
 }
+
+/*Menu Mobile*/

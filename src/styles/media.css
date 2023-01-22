@@ -39,6 +39,10 @@
     width: 100vw;
     height: auto;
   }
+  .navigation {
+    height: auto;
+    margin-top: 45%;
+  }
   .banner-desktop {
     display: none;
   }
@@ -60,17 +64,23 @@
     margin: 0 8px;
     scroll-snap-align: center;
   }
+  .grid-collection img:hover {
+    transform: none;
+  }
   .product-container {
     padding: 0px;
   }
   .carousel-card {
     width: 200px;
     margin-left: 0px;
+    margin-top: -50px;
   }
   .carousel-card h3 {
     width: 150px;
+    height: 80px;
     font-size: 16px;
   }
+
   .owl-carousel .owl-nav button.owl-prev {
     width: 40px;
     height: 200px;
@@ -129,10 +139,12 @@
     height: 350px;
     object-fit: fill;
   }
+  .navigation {
+    height: 350px;
+  }
   .footer-social-media__icons img {
     margin-top: 10px;
   }
-  
 }
 @media screen and (min-width: 768px) and (max-width: 1160px) {
   .header-container__nav ul li a {
