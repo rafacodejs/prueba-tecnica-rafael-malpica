@@ -380,7 +380,6 @@ footer {
   justify-content: center;
   align-items: flex-start;
 }
-
 .footer-container .footer-subscribe h3 {
   font-size: 18px;
   font-weight: 400;
@@ -414,13 +413,14 @@ footer {
   width: 20px;
   cursor: pointer;
 }
-.footer-container .footer-subscribe .footer-conditions p {
+.footer-container .footer-subscribe .footer-conditions label {
   width: 100%;
   font-size: 14px;
 }
 .footer-subscribe button {
   width: 100%;
   height: 35px;
+  margin: 2px;
   background-color: var(--button-color);
   border-radius: 6px;
   border: none;
@@ -605,5 +605,4 @@ footer {
   width: 45px;
   cursor: pointer;
 }
-
 /*Menu Mobile*/

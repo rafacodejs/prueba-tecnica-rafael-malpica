@@ -1,6 +1,6 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .categories-container .categories-grid .category-card img {
-    width: 150px;
+    width: 165px;
   }
   .categories-container .categories-grid .category-card h4 {
     font-size: 14px;
@@ -80,16 +80,13 @@
     height: 80px;
     font-size: 16px;
   }
-
   .owl-carousel .owl-nav button.owl-prev {
-    width: 40px;
+    width: 30px;
     height: 200px;
-    font-size: 3rem;
   }
   .owl-carousel .owl-nav button.owl-next {
-    width: 40px;
+    width: 30px;
     height: 200px;
-    font-size: 3rem;
   }
   .footer-container {
     display: grid;
@@ -101,6 +98,10 @@
   .footer-container .footer-subscribe {
     background-color: #eeeeee;
     padding: 15px;
+  }
+  .footer-container .footer-subscribe form {
+    border: 1px solid var(--button-color);
+    border-radius: 8px;
   }
   .footer-info,
   .footer-stores,
@@ -131,7 +132,6 @@
     font-size: 16px;
     margin-right: 12px;
   }
-
   form {
     width: 200px;
   }
